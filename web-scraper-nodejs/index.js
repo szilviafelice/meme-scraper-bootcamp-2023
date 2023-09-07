@@ -18,8 +18,12 @@ try {
       const elements = dom.window.document.querySelectorAll('img');
       const imgElements = Array.from(elements);
       const slicedArray = imgElements.slice(0, 10);
+      const urls = [];
+      for (const image of slicedArray) {
+        urls.push(image.src);
+      }
 
-      console.log(slicedArray);
+      console.log(urls);
     })
     .catch((error) => console.log(error));
 } catch (err) {
