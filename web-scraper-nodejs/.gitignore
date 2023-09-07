@@ -1,0 +1,7 @@
+node_modules/
+memes/
+npm-debug.log*
+.DS_Store
+
+.eslintcache
+*.tsbuildinfo
